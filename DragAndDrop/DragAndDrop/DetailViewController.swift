@@ -7,15 +7,17 @@
 //
 
 import UIKit
+import MobileCoreServices
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var poster: UIImageView!
     @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var boardView: UIView!
     @IBOutlet weak var colorCollection: UICollectionView!
 
     var titleColor: UIColor = UIColor.red
     var titleFont: String = "Arial"
+    var titleImage: UIImage?
 
     let colors: [UIColor] = {
         let colorIndex: [CGFloat] = [0, 51 / 255, 102 / 255, 153 / 255, 204 / 255, 1]
@@ -37,14 +39,19 @@ class DetailViewController: UIViewController {
 
         self.colorCollection.dragDelegate = self
         
-        boardView.isUserInteractionEnabled = true
-        boardView.addInteraction(UIDropInteraction(delegate: self))
+        poster.isUserInteractionEnabled = true
+        poster.addInteraction(UIDropInteraction(delegate: self))
+        
+        drawBoard()
     }
 
     func drawBoard() {
-        self.boardView.backgroundColor = titleColor
+        
         self.label.font = UIFont(name: titleFont, size: 30)
         self.label.text = "Drag And Drop Here."
+        
+        self.poster.backgroundColor = self.titleColor
+        self.poster.image = self.titleImage
     }
 }
 
@@ -81,12 +88,12 @@ extension DetailViewController: UIDropInteractionDelegate {
 
     func dropInteraction(_ interaction: UIDropInteraction,
                          performDrop session: UIDropSession) {
-        let location = session.location(in: boardView)
+        let location = session.location(in: poster)
 
         session.loadObjects(ofClass: UIColor.self, completion: {
             guard let color = $0.first as? UIColor else { return }
 
-            if location.y < self.boardView.bounds.maxY {
+            if location.y < self.poster.bounds.maxY {
                 print("drop color")
 
                 self.titleColor = color
@@ -97,7 +104,7 @@ extension DetailViewController: UIDropInteractionDelegate {
         session.loadObjects(ofClass: NSString.self, completion: {
             guard let string = $0.first as? NSString else { return }
             
-            if location.y < self.boardView.bounds.maxY
+            if location.y < self.poster.bounds.maxY
             {
                 print("drop font")
                 self.titleFont = string as String
@@ -108,6 +115,21 @@ extension DetailViewController: UIDropInteractionDelegate {
         if session.hasItemsConforming(toTypeIdentifiers: ["随便一个id是不行的"])
         {
             print("测试随便的id是否可行")
+        }
+        
+        if session.hasItemsConforming(toTypeIdentifiers: [kUTTypeImage as String])
+        {
+            session.loadObjects(ofClass: UIImage.self, completion: {
+                guard let image = $0.first as? UIImage else { return }
+                
+                if location.y < self.poster.bounds.maxY
+                {
+                    self.titleImage = image
+                    self.drawBoard()
+                }
+                
+                
+            })
         }
     }
 

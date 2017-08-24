@@ -50,7 +50,7 @@ extension FontStyleViewController: UITableViewDragDelegate {
 
         // 2.把对象封装成NSData再传递，需要指明UTI类型（MobileCoreServices里）
         //let provider = NSItemProvider(item: fontName.data(using: .utf8)! as NSData, typeIdentifier: "随便一个id是不行的")  //错误示范
-        let provider = NSItemProvider(item: fontName.data(using: .utf8)! as NSData, typeIdentifier: kUTTypeContent as String)
+        let provider = NSItemProvider(item: fontName.data(using: .utf8)! as NSData, typeIdentifier: kUTTypePlainText as String)
 
         let dragItem = UIDragItem(itemProvider: provider)
         return [dragItem]

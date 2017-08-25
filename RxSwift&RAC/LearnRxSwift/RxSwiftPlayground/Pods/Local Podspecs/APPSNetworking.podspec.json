@@ -1,0 +1,43 @@
+{
+  "name": "APPSNetworking",
+  "version": "1.1.0",
+  "summary": "新平台网络模块",
+  "description": "'新平台网络模块...'",
+  "homepage": "https://www.appscomm.cn",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "moshiwu": "183795044@qq.com"
+  },
+  "source": {
+    "git": "https://git.oschina.net/appscommoem1/disanfangdengluku.git",
+    "tag": "1.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "APPSNetworking/Classes/**/*.swift",
+  "frameworks": [
+    "UIKit",
+    "CoreLocation"
+  ],
+  "dependencies": {
+    "Alamofire": [
+      "~> 4.5.0"
+    ],
+    "YYKit": [
+      "1.0.9"
+    ],
+    "SwiftyJSON": [
+
+    ],
+    "AlamofireObjectMapper": [
+
+    ],
+    "AlamofireLogger": [
+      "~> 0.2.0"
+    ]
+  }
+}

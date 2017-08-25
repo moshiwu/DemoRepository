@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>APPSAuthorizedLogin.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>APPSNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Alamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -64,10 +74,40 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>YYKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>1C337261D67BFE07CC5F740DBD9C4706</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2E449FDC6312186F9C5A788029219342</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2E64C806F1C50B6F4D0ECCD9356BABDE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>2F5622F3B18DF497981AB58C6D1FC72F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3C14332635D8DA3E2F69A6E53E5C4291</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>478A4E9A78C85ADB3EB934EF81676265</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -77,12 +117,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>723CD554746263E02802D960F353A940</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>81DA587490E74E2449E3049EEF3DC835</key>
+		<key>7028B35228D4E9EB0A754FCF13B663FD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -102,27 +137,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BBB5FF8F7F85A41451870836704E490E</key>
+		<key>99A40C8678AAAF916BB40804E7EA2512</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CD10A461CF1DB5996940DEE869B25BB3</key>
+		<key>A2A8CB4ADDCBB791BC59D43EA03C59DE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CDD39E8BE85C1C62F04ABAB82BEB0F23</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>EA3817DCBC3AF41061824E0C74A947D9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>ECCEEECE023B7DD138D2B4089BF4DA78</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F0535C7D33B6342E7AED6C16FC70D18F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

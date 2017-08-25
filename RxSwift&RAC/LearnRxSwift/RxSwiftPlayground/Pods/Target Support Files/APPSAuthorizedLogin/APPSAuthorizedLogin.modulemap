@@ -1,0 +1,6 @@
+framework module APPSAuthorizedLogin {
+  umbrella header "APPSAuthorizedLogin-umbrella.h"
+
+  export *
+  module * { export * }
+}

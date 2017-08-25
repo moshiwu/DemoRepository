@@ -27,7 +27,7 @@ class PhotoCollectionViewController: UICollectionViewController, UICollectionVie
 
         // 使用RxCocoa管理UICollectionView之前必须要让出dataSource的位置
         self.collectionView!.dataSource = nil
-        
+
         // self.collectionView!.delegate = nil  // delegate的话，并不是处理数据的代理，所以可以自己持有，用来处理View层的逻辑
 
         // 创建方法一，创建Observable数据源，并绑定到collectionView.rx.items，详见UICollectionView+Rx.swift

@@ -1,0 +1,6 @@
+framework module APPSNetworking {
+  umbrella header "APPSNetworking-umbrella.h"
+
+  export *
+  module * { export * }
+}

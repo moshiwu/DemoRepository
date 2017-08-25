@@ -6,40 +6,76 @@
 //
 
 import UIKit
+import Alamofire
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        let r = APPSLoginRequest()
+        r.accountId = "account"
+        r.password = "password"
+        r.customerCode = "test"
+
+        let a = AccountAPI.login(model: r)
+
+        print(a.toJSONString())
         return true
     }
-
-    func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
-    }
-
-    func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-    }
-
-    func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-    }
-
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    }
-
-    func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    }
-
-
 }
 
+public protocol APPSRequest: URLRequestConvertible {
+    var host: String { get }
+    var header: HTTPHeaders { get }
+    var method: HTTPMethod { get }
+    var parameters: Parameters? { get }
+    var seq: TimeInterval { get }
+    var versionNo: String { get }
+    var clientType: String { get }
+    var accessToken: String? { get set }
+}
+
+extension APPSRequest {
+    public var host: String { return "https://new.fashioncomm.com" }
+    public var header: HTTPHeaders { return ["Content-type": "application/json", "accept": "application/json"] }
+    public var method: HTTPMethod { return .get }
+    public var seq: TimeInterval { return Date().timeIntervalSince1970 }
+    public var versionNo: String { return "2.0" }
+    public var clientType: String { return "iphone" }
+    public var parameters: Parameters? { return [:] }
+
+    public var accessToken: String? {
+        get { return "" }
+        set {}
+    }
+}
+import APPSNetworking
+import ObjectMapper
+
+extension Dictionary where Key == String, Value: Any {
+    func test() {
+        print("ttt")
+    }
+}
+
+public enum AccountAPI: APPSRequest, Mappable {
+    var a: String { return "a" }
+    public init?(map: Map) {
+        self.init(map: map)
+    }
+
+    public mutating func mapping(map: Map) {
+
+    }
+
+    case login(model: APPSLoginRequest)
+    case register(model: APPSRegisterRequest)
+
+    public func asURLRequest() throws -> URLRequest {
+
+        return URLRequest(url: URL(string: "")!)
+    }
+}

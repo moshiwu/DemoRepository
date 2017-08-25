@@ -1,0 +1,59 @@
+{
+  "name": "APPSAuthorizedLogin",
+  "version": "1.1.0",
+  "summary": "封装了ShareSDK的第三方登录库",
+  "description": "'封装了ShareSDK的第三方登录库，嗯...'",
+  "homepage": "https://www.appscomm.cn",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "moshiwu": "183795044@qq.com"
+  },
+  "source": {
+    "git": "https://git.oschina.net/appscommoem1/disanfangdengluku.git",
+    "tag": "1.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "frameworks": [
+    "UIKit",
+    "JavaScriptCore",
+    "SystemConfiguration",
+    "CoreTelephony",
+    "ImageIO"
+  ],
+  "libraries": [
+    "icucore",
+    "z.1.2.5",
+    "stdc++",
+    "z",
+    "sqlite3"
+  ],
+  "dependencies": {
+    "APPSNetworking": [
+
+    ]
+  },
+  "vendored_frameworks": "SDK/**/*.framework",
+  "xcconfig": {
+    "FRAMEWORK_SEARCH_PATHS": "\"${PODS_ROOT}/APPSAuthorizedLogin/SDK/ShareSDK\"/**",
+    "OTHER_LDFLAGS": "\"-ObjC\""
+  },
+  "resources": [
+    "SDK/ShareSDK/**/*.bundle",
+    "SDK/script.sh"
+  ],
+  "source_files": [
+    "APPSAuthorizedLogin/Classes/**/*",
+    "SDK/ShareSDK/Support/PlatformSDK/**/*.{h,m}"
+  ],
+  "public_header_files": [
+    "SDK/ShareSDK/Support/PlatformSDK/SinaWeiboSDK/*.h",
+    "SDK/ShareSDK/Support/PlatformSDK/WeChatSDK/*.h",
+    "APPSAuthorizedLogin/Classes/**/*.h"
+  ],
+  "vendored_libraries": "SDK/ShareSDK/Support/PlatformSDK/**/*.a"
+}

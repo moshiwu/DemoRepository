@@ -29,6 +29,8 @@
 		3DC72B5E1F4BDBCE00D2D2A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DC72B611F4BDBCE00D2D2A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DC72B631F4BDBCE00D2D2A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DE526431F4FCDAF00366C38 /* APPSAuthorizedLogin.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; name = APPSAuthorizedLogin.podspec; path = "../../../../../../乐源GIT/第三方登录库/APPSAuthorizedLogin.podspec"; sourceTree = "<group>"; };
+		3DE526441F4FCDAF00366C38 /* APPSNetworking.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; name = APPSNetworking.podspec; path = "../../../../../../乐源GIT/第三方登录库/APPSNetworking.podspec"; sourceTree = "<group>"; };
 		65691C8009074F8526AC7350 /* Pods-RxSwiftPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftPlayground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftPlayground/Pods-RxSwiftPlayground.debug.xcconfig"; sourceTree = "<group>"; };
 		6588FC93C1A6AC645A3929CA /* Pods-RxCocoaDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxCocoaDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxCocoaDemo/Pods-RxCocoaDemo.release.xcconfig"; sourceTree = "<group>"; };
 		6A6AEE582D0652245B360DA0 /* Pods-RxSwiftPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftPlayground.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftPlayground/Pods-RxSwiftPlayground.release.xcconfig"; sourceTree = "<group>"; };
@@ -86,6 +88,8 @@
 		3DC72B561F4BDBCE00D2D2A1 /* RxCocoaDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3DE526431F4FCDAF00366C38 /* APPSAuthorizedLogin.podspec */,
+				3DE526441F4FCDAF00366C38 /* APPSNetworking.podspec */,
 				3DC72B571F4BDBCE00D2D2A1 /* AppDelegate.swift */,
 				3DC72B591F4BDBCE00D2D2A1 /* RegisterViewController.swift */,
 				3D8F329E1F4EB7EA00C46634 /* PhotoCollectionViewController.swift */,
@@ -179,6 +183,7 @@
 					3DC72B541F4BDBCE00D2D2A1 = {
 						CreatedOnToolsVersion = 9.0;
 						DevelopmentTeam = 7827DZ9F2C;
+						LastSwiftMigration = 0900;
 					};
 				};
 			};
@@ -319,11 +324,14 @@
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftLiteKit/SwiftLiteKit.framework",
+				"${BUILT_PRODUCTS_DIR}/APPSAuthorizedLogin/APPSAuthorizedLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/APPSNetworking/APPSNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireLogger/AlamofireLogger.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -332,11 +340,14 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftLiteKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/APPSAuthorizedLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/APPSNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireLogger.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -416,6 +427,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -454,6 +466,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;

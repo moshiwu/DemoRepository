@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D8F329F1F4EB7EA00C46634 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8F329E1F4EB7EA00C46634 /* PhotoCollectionViewController.swift */; };
+		3D8F32B11F4FAA3900C46634 /* UIViewController+Extendsion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8F32B01F4FAA3900C46634 /* UIViewController+Extendsion.swift */; };
 		3DC72B581F4BDBCE00D2D2A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC72B571F4BDBCE00D2D2A1 /* AppDelegate.swift */; };
 		3DC72B5A1F4BDBCE00D2D2A1 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC72B591F4BDBCE00D2D2A1 /* RegisterViewController.swift */; };
 		3DC72B5D1F4BDBCE00D2D2A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC72B5B1F4BDBCE00D2D2A1 /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D8F329E1F4EB7EA00C46634 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
+		3D8F32B01F4FAA3900C46634 /* UIViewController+Extendsion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extendsion.swift"; sourceTree = "<group>"; };
 		3DC72B551F4BDBCE00D2D2A1 /* RxCocoaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxCocoaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC72B571F4BDBCE00D2D2A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DC72B591F4BDBCE00D2D2A1 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +88,8 @@
 			children = (
 				3DC72B571F4BDBCE00D2D2A1 /* AppDelegate.swift */,
 				3DC72B591F4BDBCE00D2D2A1 /* RegisterViewController.swift */,
+				3D8F329E1F4EB7EA00C46634 /* PhotoCollectionViewController.swift */,
+				3D8F32B01F4FAA3900C46634 /* UIViewController+Extendsion.swift */,
 				3DC72B5B1F4BDBCE00D2D2A1 /* Main.storyboard */,
 				3DC72B5E1F4BDBCE00D2D2A1 /* Assets.xcassets */,
 				3DC72B601F4BDBCE00D2D2A1 /* LaunchScreen.storyboard */,
@@ -246,13 +252,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RxSwiftPlayground/Pods-RxSwiftPlayground-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftLiteKit/SwiftLiteKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftLiteKit.framework",
 			);
@@ -304,7 +314,9 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RxCocoaDemo/Pods-RxCocoaDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftLiteKit/SwiftLiteKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
@@ -315,7 +327,9 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftLiteKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
@@ -337,7 +351,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DC72B5A1F4BDBCE00D2D2A1 /* RegisterViewController.swift in Sources */,
+				3D8F329F1F4EB7EA00C46634 /* PhotoCollectionViewController.swift in Sources */,
 				3DC72B581F4BDBCE00D2D2A1 /* AppDelegate.swift in Sources */,
+				3D8F32B11F4FAA3900C46634 /* UIViewController+Extendsion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

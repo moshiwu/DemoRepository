@@ -3,6 +3,7 @@ use_frameworks!
 target 'RxSwiftPlayground' do
 pod 'RxSwift'
 pod 'RxCocoa'
+pod 'RxDataSources'
 #pod 'SwiftLiteKit', :path => '/Users/moqiaowen/Documents/个人Git/SwiftLiteKit/'
 pod 'SwiftLiteKit'
 end
@@ -10,6 +11,7 @@ end
 target 'RxCocoaDemo' do
     pod 'RxSwift'
     pod 'RxCocoa'
+    pod 'RxDataSources'
     pod 'Alamofire', '~> 4.5.0'
     pod 'SwiftyJSON'
     pod 'AlamofireObjectMapper'

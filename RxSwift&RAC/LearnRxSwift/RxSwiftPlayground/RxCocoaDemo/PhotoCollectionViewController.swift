@@ -13,7 +13,7 @@ import RxDataSources
 
 private let reuseIdentifier = "PhotoCell"
 
-class PhotoCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class PhotoCollectionViewController: UICollectionViewController {
 
     var disposeBag = DisposeBag()
 
@@ -28,7 +28,8 @@ class PhotoCollectionViewController: UICollectionViewController, UICollectionVie
         // 使用RxCocoa管理UICollectionView之前必须要让出dataSource的位置
         self.collectionView!.dataSource = nil
 
-        // self.collectionView!.delegate = nil  // delegate的话，并不是处理数据的代理，所以可以自己持有，用来处理View层的逻辑
+        self.collectionView!.delegate = nil // delegate的话，并不是处理数据的代理，所以可以自己持有，用来处理View层的逻辑（不运行下一行setDelegate的话）
+        self.collectionView!.rx.setDelegate(self).addDisposableTo(self.disposeBag) // 通过Reactive的setDelegate方法，可以做到普通的delegate和rx的delegate共存，但是必须先将其delegate设置成nil后才进行bind操作，否则会报错
 
         // 创建方法一，创建Observable数据源，并绑定到collectionView.rx.items，详见UICollectionView+Rx.swift
         //        self.photos_example1
@@ -89,8 +90,8 @@ class PhotoCollectionViewController: UICollectionViewController, UICollectionVie
             .bind(to: collectionView!.rx.items(dataSource: dataSource))
             .disposed(by: disposeBag)
 
-        _ = self.collectionView!.rx.itemSelected.subscribe { print("item clicked \($0)") } // 订阅点击事件
-        _ = self.collectionView!.rx.didScroll.subscribe { print("did scroll \($0)") } // 订阅滚动事件，其他事件雷同
+        _ = self.collectionView!.rx.itemSelected.subscribe { print("rx delegate item clicked \($0)") } // 订阅点击事件
+        _ = self.collectionView!.rx.didScroll.subscribe { print("rx delegate did scroll \($0)") } // 订阅滚动事件，其他事件雷同
 
         checkAuthorized()
     }
@@ -147,11 +148,6 @@ class PhotoCollectionViewController: UICollectionViewController, UICollectionVie
     deinit {
         print("\(NSStringFromClass(self.classForCoder)) deinit")
     }
-
-    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
-        print("delegate selected \(indexPath)")
-    }
 }
 
 class PhotoCell: UICollectionViewCell {
@@ -177,6 +173,12 @@ extension PhotoCollectionViewController {
         options.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: true)]
 
         return PHAsset.fetchAssets(with: options)
+    }
+}
+
+extension PhotoCollectionViewController: UICollectionViewDelegateFlowLayout {
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("normal delegate select \(indexPath)")
     }
 }
 

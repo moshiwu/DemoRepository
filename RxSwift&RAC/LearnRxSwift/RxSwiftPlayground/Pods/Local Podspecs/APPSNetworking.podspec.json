@@ -18,7 +18,7 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "APPSNetworking/Classes/**/*.swift",
+  "source_files": "APPSNetworking/Classes/*.swift",
   "frameworks": [
     "UIKit",
     "CoreLocation"
@@ -39,5 +39,33 @@
     "AlamofireLogger": [
       "~> 0.2.0"
     ]
-  }
+  },
+  "subspecs": [
+    {
+      "name": "request",
+      "subspecs": [
+        {
+          "name": "geo",
+          "source_files": "APPSNetworking/Classes/request/geo/*.swift"
+        },
+        {
+          "name": "apps",
+          "source_files": "APPSNetworking/Classes/request/apps/*.swift"
+        }
+      ]
+    },
+    {
+      "name": "response",
+      "subspecs": [
+        {
+          "name": "geo",
+          "source_files": "APPSNetworking/Classes/response/geo/*.swift"
+        },
+        {
+          "name": "apps",
+          "source_files": "APPSNetworking/Classes/response/apps/*.swift"
+        }
+      ]
+    }
+  ]
 }

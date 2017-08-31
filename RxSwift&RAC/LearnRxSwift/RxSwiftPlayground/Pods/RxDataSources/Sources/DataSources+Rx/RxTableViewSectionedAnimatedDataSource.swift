@@ -12,7 +12,6 @@ import UIKit
 import RxSwift
 import RxCocoa
 #endif
-import Differentiator
 
 open class RxTableViewSectionedAnimatedDataSource<S: AnimatableSectionModelType>
     : TableViewSectionedDataSource<S>
@@ -47,7 +46,7 @@ open class RxTableViewSectionedAnimatedDataSource<S: AnimatableSectionModelType>
                     }
                     let oldSections = dataSource.sectionModels
                     do {
-                        let differences = try Diff.differencesForSectionedView(initialSections: oldSections, finalSections: newSections)
+                        let differences = try differencesForSectionedView(initialSections: oldSections, finalSections: newSections)
 
                         for difference in differences {
                             dataSource.setSections(difference.finalSections)

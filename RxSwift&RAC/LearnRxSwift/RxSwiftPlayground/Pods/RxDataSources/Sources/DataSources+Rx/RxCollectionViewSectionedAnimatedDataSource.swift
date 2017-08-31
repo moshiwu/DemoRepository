@@ -12,7 +12,6 @@ import UIKit
 import RxSwift
 import RxCocoa
 #endif
-import Differentiator
 
 /*
  This is commented becuse collection view has bugs when doing animated updates. 
@@ -64,7 +63,7 @@ open class RxCollectionViewSectionedAnimatedDataSource<S: AnimatableSectionModel
                     collectionView.reloadData()
                     return
                 }
-                let differences = try Diff.differencesForSectionedView(initialSections: oldSections, finalSections: newSections)
+                let differences = try differencesForSectionedView(initialSections: oldSections, finalSections: newSections)
 
                 for difference in differences {
                     dataSource.setSections(difference.finalSections)

@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import Differentiator
 
 func indexSet(_ values: [Int]) -> IndexSet {
     let indexSet = NSMutableIndexSet()

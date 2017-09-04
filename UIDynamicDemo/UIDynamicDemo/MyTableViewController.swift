@@ -58,6 +58,9 @@ class MyTableViewController: UITableViewController {
             vc = Demo4ViewController()
         } else if index == 5 {
             vc = Demo5ViewController()
+        } else if index == 6 {
+            self.performSegue(withIdentifier: "demo6", sender: self)
+            return;
         }
 
         guard let v = vc else { return }

@@ -30,24 +30,35 @@ class Demo5ViewController: BaseDemoViewController {
         let offset = UIOffset(horizontal: 20, vertical: 20)
         
         self.attachment = UIAttachmentBehavior(item: view1, offsetFromCenter: offset, attachedToAnchor: anchorPoint)
-        self.attachment.damping = 0.8 // 如果不设置damping、frequency，则附着行为是刚性附着
-        self.attachment.frequency = 0.5
+        self.attachment.damping = 0.6 // 如果不设置damping、frequency，则附着行为是刚性附着
+        self.attachment.frequency = 0.7
         self.animator.addBehavior(self.attachment)
-        
-        let action = { [unowned self] in
-            self.updateViewLayer()
-        }
         
         // 添加重力行为
         let gra = UIGravityBehavior(items: [view1])
         self.animator.addBehavior(gra)
         
-        gra.action = action
-        self.attachment.action = action
+        // 添加碰撞行为
+        let collision = UICollisionBehavior(items: [view1])
+        collision.translatesReferenceBoundsIntoBoundary = true
+        self.animator.addBehavior(collision)
+        
+        // 添加观察者实时重绘
+        self.view1.addObserver(self, forKeyPath: "center", options: .new, context: nil)
         
         randomSubViews()
         updateViewLayer()
         
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.view1.removeObserver(self, forKeyPath: "center")
+    }
+    
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey: Any]?, context: UnsafeMutableRawPointer?) {
+        if keyPath == "center" {
+            self.updateViewLayer()
+        }
     }
     
     override func panAction(_ sender: UIPanGestureRecognizer) {

@@ -22,9 +22,63 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let a = AccountAPI.login(model: r)
 
-        print(a.toJSONString())
+        print(a.toJSONString()!)
+        print(r.toJSONString()!)
+
+        let ttt = A()
+
+        do {
+            let value = try JSONEncoder().encode(ttt)
+            
+            
+            print(value)
+
+        } catch {
+            print(error)
+        }
         return true
     }
+}
+
+protocol PropertyPrinter {
+    func propertyList() -> [String]
+}
+
+extension PropertyPrinter where Self: NSObject {
+    func propertyList() -> [String] {
+        var count: UInt32 = 0
+        // 获取类的属性列表,返回属性列表的数组,可选项
+        let list = class_copyPropertyList(self.classForCoder, &count)
+        print("属性个数:\(count)")
+        // 遍历数组
+        for i in 0..<Int(count) {
+            // 根据下标获取属性
+            let pty = list?[i]
+            // 获取属性的名称<C语言字符串>
+            // 转换过程:Int8 -> Byte -> Char -> C语言字符串
+            let cName = property_getName(pty!)
+            // 转换成String的字符串
+            let name = String(utf8String: cName!)
+            print(name!)
+        }
+        free(list) // 释放list
+        return []
+    }
+}
+
+class A: Codable {
+    var name: String = "123"
+    func test() {
+
+    }
+}
+
+extension APPSLoginRequest: BaseMappable {
+    public func mapping(map: Map) {
+        accountId <- map["accountId"]
+
+    }
+
 }
 
 public protocol APPSRequest: URLRequestConvertible {
@@ -48,7 +102,7 @@ extension APPSRequest {
     public var parameters: Parameters? { return [:] }
 
     public var accessToken: String? {
-        get { return "" }
+        get { return "testToken" }
         set {}
     }
 }
@@ -68,7 +122,7 @@ public enum AccountAPI: APPSRequest, Mappable {
     }
 
     public mutating func mapping(map: Map) {
-
+        accessToken <- map["accessToken"]
     }
 
     case login(model: APPSLoginRequest)

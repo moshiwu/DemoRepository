@@ -24,28 +24,12 @@ func writeSequenceToConsole<O: ObservableType>(name: String, sequence: O) {
         }
 }
 
-// let arr1: [String?] = ["1", "2", "3", "4"]
-// let arr2: [String?] = ["1", "2", "3", "4"]
-//
-// print(arr1)
-// print(arr2)
-//
-// arr1.elementsEqual(arr2, by: == )
-//
-// print(arr1)
-// print(arr2)
+enum TableViewEditingCommand {
+    case donothing
+    case deleteUser(indexPath: IndexPath)
+    case moveUser(from: IndexPath, to: IndexPath)
+}
+print(type(of: TableViewEditingCommand.donothing))
+print(type(of: TableViewEditingCommand.deleteUser))
+print(type(of: TableViewEditingCommand.moveUser))
 
-// let sequenceOfElements = Observable.of(1,2,3,4).map { r -> Int in
-//    print("MAP")    // twice
-//    return r * 2
-// }.share()
-//
-//
-// let subscription = sequenceOfElements
-//    .subscribe { event in
-//        print("1 - \(event)")
-// }
-// let subscription2 = sequenceOfElements
-//    .subscribe { event in
-//        print("2 - \(event)")
-//

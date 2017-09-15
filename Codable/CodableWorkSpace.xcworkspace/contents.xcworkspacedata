@@ -10,4 +10,10 @@
    <FileRef
       location = "group:Codable_demo3.playground">
    </FileRef>
+   <FileRef
+      location = "group:Codable_demo4.playground">
+   </FileRef>
+   <FileRef
+      location = "group:Codable_demo5.playground">
+   </FileRef>
 </Workspace>

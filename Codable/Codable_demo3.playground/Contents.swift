@@ -1,3 +1,6 @@
+
+// Codable 继承关系的处理
+
 import UIKit
 
 class Point2D: Codable
@@ -62,6 +65,7 @@ class Point3D: Point2D
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.z = try container.decode(Int.self, forKey: .z)
 
+        // 调用super的decode方法
         // 继承关系里，可以用一个key把基类的属性包裹起来
         try super.init(from: container.superDecoder(forKey: .point_2d))
         // try super.init(from: decoder)
@@ -72,6 +76,7 @@ class Point3D: Point2D
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(z, forKey: .z)
 
+        // 调用super的encode方法
         // 继承关系里，可以用一个key把基类的属性包裹起来
         try super.encode(to: container.superEncoder(forKey: .point_2d))
         // try super.encode(to: encoder)

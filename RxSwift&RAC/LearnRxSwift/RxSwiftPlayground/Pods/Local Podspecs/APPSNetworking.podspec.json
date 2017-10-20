@@ -1,6 +1,6 @@
 {
   "name": "APPSNetworking",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "summary": "新平台网络模块",
   "description": "'新平台网络模块...'",
   "homepage": "https://www.appscomm.cn",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://git.oschina.net/appscommoem1/disanfangdengluku.git",
-    "tag": "1.1.0"
+    "tag": "APPSNetworking1.2.0"
   },
   "platforms": {
     "ios": "8.0"
@@ -38,6 +38,12 @@
     ],
     "AlamofireLogger": [
       "~> 0.2.0"
+    ],
+    "RxSwift": [
+      "~> 3.6"
+    ],
+    "RxCocoa": [
+      "~> 3.6"
     ]
   },
   "subspecs": [

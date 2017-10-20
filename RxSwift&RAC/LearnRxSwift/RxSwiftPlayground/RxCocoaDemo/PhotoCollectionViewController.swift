@@ -22,6 +22,7 @@ class PhotoCollectionViewController: UICollectionViewController {
 
     fileprivate lazy var imageManager = PHCachingImageManager()
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

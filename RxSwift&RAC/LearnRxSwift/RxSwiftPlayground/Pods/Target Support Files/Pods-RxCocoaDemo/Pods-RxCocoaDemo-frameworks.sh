@@ -102,13 +102,15 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RandomKit/RandomKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ShiftOperations/ShiftOperations.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftLiteKit/SwiftLiteKit.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/APPSAuthorizedLogin/APPSAuthorizedLogin.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Threadly/Threadly.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/APPSNetworking/APPSNetworking.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AlamofireLogger/AlamofireLogger.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework"
@@ -116,13 +118,15 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RandomKit/RandomKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ShiftOperations/ShiftOperations.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwiftLiteKit/SwiftLiteKit.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/APPSAuthorizedLogin/APPSAuthorizedLogin.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Threadly/Threadly.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/APPSNetworking/APPSNetworking.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AlamofireLogger/AlamofireLogger.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework"

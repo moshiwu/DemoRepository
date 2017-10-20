@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D1FDD541F5E3F40004432D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1FDD531F5E3F40004432D4 /* ViewController.swift */; };
 		3D8F329F1F4EB7EA00C46634 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8F329E1F4EB7EA00C46634 /* PhotoCollectionViewController.swift */; };
 		3D8F32B11F4FAA3900C46634 /* UIViewController+Extendsion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8F32B01F4FAA3900C46634 /* UIViewController+Extendsion.swift */; };
 		3DC72B581F4BDBCE00D2D2A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC72B571F4BDBCE00D2D2A1 /* AppDelegate.swift */; };
@@ -14,12 +15,16 @@
 		3DC72B5D1F4BDBCE00D2D2A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC72B5B1F4BDBCE00D2D2A1 /* Main.storyboard */; };
 		3DC72B5F1F4BDBCE00D2D2A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC72B5E1F4BDBCE00D2D2A1 /* Assets.xcassets */; };
 		3DC72B621F4BDBCE00D2D2A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC72B601F4BDBCE00D2D2A1 /* LaunchScreen.storyboard */; };
+		3DE1DFCA1F5F956C007AC687 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE1DFC71F5F9564007AC687 /* UserInfo.swift */; };
+		3DE1DFCB1F5F956E007AC687 /* ResMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE1DFC81F5F9564007AC687 /* ResMap.swift */; };
+		3DE1DFCC1F5F9570007AC687 /* RootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE1DFC91F5F9564007AC687 /* RootClass.swift */; };
 		59B37D208AD97424732E3153 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF8E94B61C017F0760B3A36 /* Foundation.framework */; };
 		B9054440ABA3E491E9C11D77 /* Pods_RxCocoaDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEAF4D0B4275BBD44AF05447 /* Pods_RxCocoaDemo.framework */; };
 		CE6D60ED04A5A91CA29CDBE0 /* Pods_RxSwiftPlayground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1CA89C1E930E85CA17D73FF /* Pods_RxSwiftPlayground.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D1FDD531F5E3F40004432D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3D8F329E1F4EB7EA00C46634 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
 		3D8F32B01F4FAA3900C46634 /* UIViewController+Extendsion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extendsion.swift"; sourceTree = "<group>"; };
 		3DC72B551F4BDBCE00D2D2A1 /* RxCocoaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxCocoaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +34,9 @@
 		3DC72B5E1F4BDBCE00D2D2A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DC72B611F4BDBCE00D2D2A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DC72B631F4BDBCE00D2D2A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DE1DFC71F5F9564007AC687 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		3DE1DFC81F5F9564007AC687 /* ResMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResMap.swift; sourceTree = "<group>"; };
+		3DE1DFC91F5F9564007AC687 /* RootClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootClass.swift; sourceTree = "<group>"; };
 		3DE526431F4FCDAF00366C38 /* APPSAuthorizedLogin.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; name = APPSAuthorizedLogin.podspec; path = "../../../../../../乐源GIT/第三方登录库/APPSAuthorizedLogin.podspec"; sourceTree = "<group>"; };
 		3DE526441F4FCDAF00366C38 /* APPSNetworking.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; name = APPSNetworking.podspec; path = "../../../../../../乐源GIT/第三方登录库/APPSNetworking.podspec"; sourceTree = "<group>"; };
 		65691C8009074F8526AC7350 /* Pods-RxSwiftPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftPlayground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftPlayground/Pods-RxSwiftPlayground.debug.xcconfig"; sourceTree = "<group>"; };
@@ -88,10 +96,12 @@
 		3DC72B561F4BDBCE00D2D2A1 /* RxCocoaDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3DE1DFC61F5F9564007AC687 /* model */,
 				3DE526431F4FCDAF00366C38 /* APPSAuthorizedLogin.podspec */,
 				3DE526441F4FCDAF00366C38 /* APPSNetworking.podspec */,
 				3DC72B571F4BDBCE00D2D2A1 /* AppDelegate.swift */,
 				3DC72B591F4BDBCE00D2D2A1 /* RegisterViewController.swift */,
+				3D1FDD531F5E3F40004432D4 /* ViewController.swift */,
 				3D8F329E1F4EB7EA00C46634 /* PhotoCollectionViewController.swift */,
 				3D8F32B01F4FAA3900C46634 /* UIViewController+Extendsion.swift */,
 				3DC72B5B1F4BDBCE00D2D2A1 /* Main.storyboard */,
@@ -100,6 +110,16 @@
 				3DC72B631F4BDBCE00D2D2A1 /* Info.plist */,
 			);
 			path = RxCocoaDemo;
+			sourceTree = "<group>";
+		};
+		3DE1DFC61F5F9564007AC687 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				3DE1DFC71F5F9564007AC687 /* UserInfo.swift */,
+				3DE1DFC81F5F9564007AC687 /* ResMap.swift */,
+				3DE1DFC91F5F9564007AC687 /* RootClass.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		62A6FE8E991C2A29B1729E67 /* Products */ = {
@@ -257,17 +277,25 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RxSwiftPlayground/Pods-RxSwiftPlayground-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RandomKit/RandomKit.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/ShiftOperations/ShiftOperations.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftLiteKit/SwiftLiteKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Threadly/Threadly.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RandomKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ShiftOperations.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftLiteKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Threadly.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -317,13 +345,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RxCocoaDemo/Pods-RxCocoaDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RandomKit/RandomKit.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/ShiftOperations/ShiftOperations.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftLiteKit/SwiftLiteKit.framework",
-				"${BUILT_PRODUCTS_DIR}/APPSAuthorizedLogin/APPSAuthorizedLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/Threadly/Threadly.framework",
 				"${BUILT_PRODUCTS_DIR}/APPSNetworking/APPSNetworking.framework",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireLogger/AlamofireLogger.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
@@ -332,13 +362,15 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RandomKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ShiftOperations.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftLiteKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/APPSAuthorizedLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Threadly.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/APPSNetworking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireLogger.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
@@ -357,8 +389,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D1FDD541F5E3F40004432D4 /* ViewController.swift in Sources */,
+				3DE1DFCB1F5F956E007AC687 /* ResMap.swift in Sources */,
+				3DE1DFCC1F5F9570007AC687 /* RootClass.swift in Sources */,
 				3DC72B5A1F4BDBCE00D2D2A1 /* RegisterViewController.swift in Sources */,
 				3D8F329F1F4EB7EA00C46634 /* PhotoCollectionViewController.swift in Sources */,
+				3DE1DFCA1F5F956C007AC687 /* UserInfo.swift in Sources */,
 				3DC72B581F4BDBCE00D2D2A1 /* AppDelegate.swift in Sources */,
 				3D8F32B11F4FAA3900C46634 /* UIViewController+Extendsion.swift in Sources */,
 			);
@@ -450,7 +486,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -489,7 +525,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

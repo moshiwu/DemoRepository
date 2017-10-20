@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '1C337261D67BFE07CC5F740DBD9C4706'
-               BlueprintName = 'APPSAuthorizedLogin'
+               BlueprintIdentifier = '93EEABEF89787BADA65E8719B2BA976C'
+               BlueprintName = 'ShiftOperations'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'APPSAuthorizedLogin.framework'>
+               BuildableName = 'ShiftOperations.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

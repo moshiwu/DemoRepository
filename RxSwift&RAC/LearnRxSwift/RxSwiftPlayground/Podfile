@@ -4,7 +4,9 @@ target 'RxSwiftPlayground' do
 pod 'RxSwift'
 pod 'RxCocoa'
 pod 'RxDataSources'
+pod 'RandomKit', '~> 5.2.3'
 pod 'SwiftLiteKit', :path => '/Users/moqiaowen/Documents/个人Git/SwiftLiteKit/'
+pod 'Alamofire', '~> 4.5.0'
 #pod 'SwiftLiteKit'
 end
 
@@ -17,9 +19,10 @@ target 'RxCocoaDemo' do
     pod 'AlamofireObjectMapper'
     pod 'AlamofireLogger', '~> 0.2.0'
 #    pod 'SwiftLiteKit'
-    
+#    pod 'HandyJSON'
+    pod 'RandomKit', '~> 5.2.3'
     pod 'SwiftLiteKit', :path => '/Users/moqiaowen/Documents/个人Git/SwiftLiteKit/'
-    pod 'APPSAuthorizedLogin', :path => '/Users/moqiaowen/Documents/乐源GIT/第三方登录库/'
+#    pod 'APPSAuthorizedLogin', :path => '/Users/moqiaowen/Documents/乐源GIT/第三方登录库/'
     pod 'APPSNetworking', :path => '/Users/moqiaowen/Documents/乐源GIT/第三方登录库/'
 
 end

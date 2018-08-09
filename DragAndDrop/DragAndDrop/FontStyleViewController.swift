@@ -18,6 +18,8 @@ class FontStyleViewController: UITableViewController {
 
         self.clearsSelectionOnViewWillAppear = false
         self.tableView.dragDelegate = self
+        
+        //test1
     }
 
     // MARK: - Table view data source

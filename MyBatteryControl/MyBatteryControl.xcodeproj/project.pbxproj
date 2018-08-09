@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DDBDD2E1FF239E500530972 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDBDD2D1FF239E500530972 /* AppDelegate.m */; };
+		3DDBDD331FF239E500530972 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DDBDD321FF239E500530972 /* Assets.xcassets */; };
+		3DDBDD361FF239E500530972 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DDBDD341FF239E500530972 /* Main.storyboard */; };
+		3DDBDD391FF239E500530972 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDBDD381FF239E500530972 /* main.m */; };
+		3DDBDD421FF24B0000530972 /* MyPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDBDD411FF24B0000530972 /* MyPopViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3DDBDD291FF239E500530972 /* 电流监控.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "电流监控.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DDBDD2C1FF239E500530972 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3DDBDD2D1FF239E500530972 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3DDBDD321FF239E500530972 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DDBDD351FF239E500530972 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DDBDD371FF239E500530972 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DDBDD381FF239E500530972 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3DDBDD3A1FF239E500530972 /* MyBatteryControl.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyBatteryControl.entitlements; sourceTree = "<group>"; };
+		3DDBDD401FF24B0000530972 /* MyPopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPopViewController.h; sourceTree = "<group>"; };
+		3DDBDD411FF24B0000530972 /* MyPopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPopViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DDBDD261FF239E500530972 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DDBDD201FF239E500530972 = {
+			isa = PBXGroup;
+			children = (
+				3DDBDD2B1FF239E500530972 /* MyBatteryControl */,
+				3DDBDD2A1FF239E500530972 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DDBDD2A1FF239E500530972 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DDBDD291FF239E500530972 /* 电流监控.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DDBDD2B1FF239E500530972 /* MyBatteryControl */ = {
+			isa = PBXGroup;
+			children = (
+				3DDBDD2C1FF239E500530972 /* AppDelegate.h */,
+				3DDBDD2D1FF239E500530972 /* AppDelegate.m */,
+				3DDBDD401FF24B0000530972 /* MyPopViewController.h */,
+				3DDBDD411FF24B0000530972 /* MyPopViewController.m */,
+				3DDBDD321FF239E500530972 /* Assets.xcassets */,
+				3DDBDD341FF239E500530972 /* Main.storyboard */,
+				3DDBDD371FF239E500530972 /* Info.plist */,
+				3DDBDD381FF239E500530972 /* main.m */,
+				3DDBDD3A1FF239E500530972 /* MyBatteryControl.entitlements */,
+			);
+			path = MyBatteryControl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DDBDD281FF239E500530972 /* MyBatteryControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DDBDD3D1FF239E500530972 /* Build configuration list for PBXNativeTarget "MyBatteryControl" */;
+			buildPhases = (
+				3DDBDD251FF239E500530972 /* Sources */,
+				3DDBDD261FF239E500530972 /* Frameworks */,
+				3DDBDD271FF239E500530972 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyBatteryControl;
+			productName = MyBatteryControl;
+			productReference = 3DDBDD291FF239E500530972 /* 电流监控.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DDBDD211FF239E500530972 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "莫锹文";
+				TargetAttributes = {
+					3DDBDD281FF239E500530972 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3DDBDD241FF239E500530972 /* Build configuration list for PBXProject "MyBatteryControl" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DDBDD201FF239E500530972;
+			productRefGroup = 3DDBDD2A1FF239E500530972 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DDBDD281FF239E500530972 /* MyBatteryControl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DDBDD271FF239E500530972 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DDBDD331FF239E500530972 /* Assets.xcassets in Resources */,
+				3DDBDD361FF239E500530972 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DDBDD251FF239E500530972 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DDBDD391FF239E500530972 /* main.m in Sources */,
+				3DDBDD421FF24B0000530972 /* MyPopViewController.m in Sources */,
+				3DDBDD2E1FF239E500530972 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3DDBDD341FF239E500530972 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DDBDD351FF239E500530972 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DDBDD3B1FF239E500530972 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3DDBDD3C1FF239E500530972 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3DDBDD3E1FF239E500530972 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyBatteryControl/MyBatteryControl.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7827DZ9F2C;
+				INFOPLIST_FILE = MyBatteryControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.msw.MyBatteryControl;
+				PRODUCT_NAME = "电流监控";
+			};
+			name = Debug;
+		};
+		3DDBDD3F1FF239E500530972 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyBatteryControl/MyBatteryControl.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7827DZ9F2C;
+				INFOPLIST_FILE = MyBatteryControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.msw.MyBatteryControl;
+				PRODUCT_NAME = "电流监控";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DDBDD241FF239E500530972 /* Build configuration list for PBXProject "MyBatteryControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DDBDD3B1FF239E500530972 /* Debug */,
+				3DDBDD3C1FF239E500530972 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DDBDD3D1FF239E500530972 /* Build configuration list for PBXNativeTarget "MyBatteryControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DDBDD3E1FF239E500530972 /* Debug */,
+				3DDBDD3F1FF239E500530972 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DDBDD211FF239E500530972 /* Project object */;
+}

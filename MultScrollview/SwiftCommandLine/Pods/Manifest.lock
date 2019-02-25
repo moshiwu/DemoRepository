@@ -1,0 +1,49 @@
+PODS:
+  - Closures (0.5)
+  - JRSwizzle (1.0)
+  - SnapKit (4.2.0)
+  - SwiftLiteKit (0.9.2):
+    - SwiftLiteKit/Class (= 0.9.2)
+    - SwiftLiteKit/Core (= 0.9.2)
+    - SwiftLiteKit/Protocol (= 0.9.2)
+    - SwiftLiteKit/Struct (= 0.9.2)
+  - SwiftLiteKit/Class (0.9.2):
+    - SwiftLiteKit/Core
+  - SwiftLiteKit/Core (0.9.2)
+  - SwiftLiteKit/Protocol (0.9.2):
+    - SwiftLiteKit/Core
+  - SwiftLiteKit/Struct (0.9.2):
+    - SwiftLiteKit/Core
+  - TYPagerController (2.1.2)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - Closures
+  - JRSwizzle
+  - SnapKit
+  - SwiftLiteKit (= 0.9.2)
+  - TYPagerController
+  - YYKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Closures
+    - JRSwizzle
+    - SnapKit
+    - SwiftLiteKit
+    - TYPagerController
+    - YYKit
+
+SPEC CHECKSUMS:
+  Closures: ad5ebce1242de44d64505bfd3b7c25b12cad3d2e
+  JRSwizzle: dd5ead5d913a0f29e7f558200165849f006bb1e3
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SwiftLiteKit: d0d97b7cb8b17572aeb67a3070ab771a75040cfe
+  TYPagerController: 262556ecef99986d26ed77fb1288a198ed42f4af
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: 3e69964172d398180fe59ebd5b535dede93e111b
+
+COCOAPODS: 1.6.0

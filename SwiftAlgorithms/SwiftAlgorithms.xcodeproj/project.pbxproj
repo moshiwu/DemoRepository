@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D39645023CA26E600FC19EA /* 字符串转算式.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D39644F23CA26E600FC19EA /* 字符串转算式.swift */; };
+		3D39645223CA2EA600FC19EA /* 数组中查找两数和.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D39645123CA2EA600FC19EA /* 数组中查找两数和.swift */; };
 		3DDAC27323B5B86F00CFDA58 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDAC27223B5B86F00CFDA58 /* main.swift */; };
 		3DDAC27B23B5BA3F00CFDA58 /* BubbleSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDAC27A23B5BA3F00CFDA58 /* BubbleSort.swift */; };
 		3DDAC27E23B5E3A700CFDA58 /* global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDAC27D23B5E3A700CFDA58 /* global.swift */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		3D39644F23CA26E600FC19EA /* 字符串转算式.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "字符串转算式.swift"; sourceTree = "<group>"; };
+		3D39645123CA2EA600FC19EA /* 数组中查找两数和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "数组中查找两数和.swift"; sourceTree = "<group>"; };
 		3DDAC26F23B5B86F00CFDA58 /* SwiftAlgorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftAlgorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DDAC27223B5B86F00CFDA58 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3DDAC27A23B5BA3F00CFDA58 /* BubbleSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSort.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				3D39644F23CA26E600FC19EA /* 字符串转算式.swift */,
+				3D39645123CA2EA600FC19EA /* 数组中查找两数和.swift */,
 			);
 			path = "题目";
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				3DDAC27323B5B86F00CFDA58 /* main.swift in Sources */,
 				3DDAC28C23B9EF3400CFDA58 /* CountingSort.swift in Sources */,
 				3D39645023CA26E600FC19EA /* 字符串转算式.swift in Sources */,
+				3D39645223CA2EA600FC19EA /* 数组中查找两数和.swift in Sources */,
 				3DDAC28623B5FA9A00CFDA58 /* MergeSort.swift in Sources */,
 				3DDAC27B23B5BA3F00CFDA58 /* BubbleSort.swift in Sources */,
 				3DDAC28223B5E3FD00CFDA58 /* SelectionSort.swift in Sources */,
